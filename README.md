@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/ghostish-jekyll-theme.svg)](https://badge.fury.io/rb/ghostish-jekyll-theme)
+
 # ghostish-jekyll-theme
 
 Ghostish is Jekyll theme designed to ease migration from [Ghost](https://ghost.org), by using the output from [jekyll_ghost_importer](https://github.com/eloyesp/jekyll_ghost_importer). When combined together with this theme migrating to Jekyll should be a breeze. The Ghostish design is inspired by Ghost's default Casper theme.
@@ -28,8 +30,8 @@ The theme is live on my own site: https://megalomaniacslair.co.uk/
 
 Clone/Download the repository from: [ghostish-jekyll-theme](https://github.com/drmegalomaniac/ghostish). Then run:
 
-    bundle install
-    bundle exec jekyll build
+    $ bundle install
+    $ bundle exec jekyll build
 
 ### From RubyGems
 
