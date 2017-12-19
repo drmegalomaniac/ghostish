@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+$base-font-family:      "Merriweather", serif !default;
+$base-font-size:        62.5% !default;
+$body-letter-spacing:   0.01rem !default;
+$body-line-height:      1.75em !default;
+$body-font-size:        1.8rem !default;
+$header-font-family:    "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$header-font-size:      16px !default;
+$header-line-height:    1.15em !default;
+$sec-font-family:       "Open Sans", sans-serif !default;
+$code-font-family:      "Inconsolata", monospace, sans-serif !default;
+$base-font-weight:      400 !default;
+$bold-font-weight:      700 !default;
+$light-font-weight:     300 !default;
+$small-font-size:       0.875rem !default;
+$base-line-height:      1.5 !default;
+
+$spacing-unit:            3rem !default; // 30px based on $base-font-size of 62.5%/10px
+$base-border-colour:      #EFEFEF !default;
+$post-border-colour:      #E7EEF2 !default;
+$post-border-colour02:    #EBF2F6 !default;
+$code-border-colour:      #EFEFEF !default;
+$selection-colour:        #D6EDFF !default;
+$text-colour:             #3A4145 !default;
+$meta-text-colour:        #9EABB3 !default;
+$h-text-colour:           #2E2E2E !default;
+$tag-colour:              #EEE !default;
+$background-colour:       #FFF !default;//    original fdfdfd
+$sec-background-colour:   #222 !default;//    original fdfdfd
+$code-background-colour:  #F7FAFB !default;//    original fdfdfd
+$link-colour:             #4A4A4A !default;
+$link-hover-colour:       #2A7Ae2 !default;
+$footer-colour:           #BBC7CC !default;
+
+$grey-colour:            #828282 !default;
+$grey-colour-light:      lighten($grey-colour, 40%) !default;
+$grey-colour-dark:       darken($grey-colour, 25%) !default;
+
+// Width of the content area
+$content-width:         800px !default;
+$on-palm:               600px !default;
+$on-smpalm:             400px !default;
+$on-laptop:             900px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Keyframes mixin
+@mixin keyframes($animation) {
+  @-webkit-keyframes #{$animation} {
+    @content;
+  }
+  @keyframes #{$animation} {
+    @content;
+  }
+}
+
+// Transform mixin
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	transform: $transform;
+}
+
+// Font feature settings
+@mixin fontfeatset($fontfeat...) {
+  -webkit-font-feature-settings: $fontfeat;
+     -moz-font-feature-settings: $fontfeat;
+       -o-font-feature-settings: $fontfeat;
+          font-feature-settings: $fontfeat;
+}
+
+// Box sizing mixin
+@mixin boxsizing($boxsizing) {
+  -webkit-box-sizing: $boxsizing;
+  -moz-box-sizing: $boxsizing;
+  box-sizing: $boxsizing;
+}
+
+// Import partials.
+@import
+  "ghostish/base",
+  "ghostish/layout",
+  "ghostish/syntax-highlighting"
+;

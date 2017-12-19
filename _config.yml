@@ -1,0 +1,111 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Ghostish Theme
+email:
+description: "Ghostish Jekyll theme demo site"
+baseurl: "" # the subpath of your site, e.g. /blog - leave blank ("") if yor site is at the root
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: drmegalomaniac/ghostish # GitHub username (can also include /repository after the username for a specific repository)
+googleplus_page:  # e.g. The bit after https://plus.google.com/+
+facebook_id: # The bit after https://www.facebook.com/profile.php?id=
+twitter_username:  # Omitt the @
+ko-fi_page: megalomaniac # The bit after https://ko-fi.com/
+author: "Author's name"
+authorpage: "/about/" # Where a page about the author lives
+authorimg: "/content/images/author.jpg" # an image of the author
+
+# Page/post defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Default Author"
+
+# Build settings
+markdown: kramdown
+
+# Tag page settings
+tag_page_layout: tag
+tag_page_dir: tag
+tag_permalink_style: pretty
+tag_page_data:
+  image: "/content/images/tagpage.jpg" # an image for the tag page header
+  sitemap: false
+
+# Outputting
+# permalink: date
+permalink: /:slug/
+
+############################################################
+# Site configuration for the Jekyll 3 Pagination Gem
+pagination:
+  # Site-wide kill switch, disabled here it doesn't run at all
+  enabled: true
+  # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
+  debug: false
+  # The default document collection to paginate if nothing is specified ('posts' is default)
+  collection: 'posts'
+  # How many objects per paginated page, used to be `paginate` (default: 0, means all)
+  per_page: 5
+  # The permalink structure for the paginated pages (this can be any level deep)
+  permalink: '/page/:num/' # Pages are index.html inside this folder (default)
+  #permalink: '/page/:num.html' # Pages are simple html files
+  #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
+  # Optional the title format for the paginated pages (supports :title for original page title, :num for pagination page number, :max for total number of pages)
+  title: ':title - page :num'
+  # Limit how many pagenated pages to create (default: 0, means all)
+  limit: 0
+  # Optional, defines the field that the posts should be sorted on (omit to default to 'date')
+  sort_field: 'date'
+  # Optional, sorts the posts in reverse order (omit to default decending or sort_reverse: true)
+  sort_reverse: true
+  # Optional, the default category to use, omit or just leave this as 'posts' to get a backwards-compatible behavior (all posts)
+  category: 'posts'
+  # Optional, the default tag to use, omit to disable
+  tag: ''
+  # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts,
+  # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
+  locale: ''
+  # Optional,omit or set both before and after to zero to disable.
+  # Controls how the pagination trail for the paginated pages look like.
+  trail:
+  before: 2
+  after: 2
+  # Optional, the default file extension for generated pages (e.g html, json, xml).
+  # Internally this is set to html by default
+  extension: html
+  # Optional, the default name of the index file for generated pages (e.g. 'index.html')
+  # Without file extension
+  indexpage: 'index'
+############################################################
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - ghostish-jekyll-theme.gemspec
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.txt
+  - README.md

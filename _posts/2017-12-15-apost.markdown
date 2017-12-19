@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'Welcome to Ghostish'
+image: "/content/images/postheader.jpg"
+date: '2017-12-15 16:00:00'
+tags:
+- post
+---
+
+> Ghostish is Jekyll theme designed to ease migration from [Ghost](https://ghost.org)
+
+Using the output from [jekyll_ghost_importer](https://github.com/eloyesp/jekyll_ghost_importer) and this theme, migrating to Jekyll should be a breeze.
+
+Images courtesy of [Unsplash](https://unsplash.com/).
