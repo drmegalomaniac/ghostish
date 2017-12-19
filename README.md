@@ -4,7 +4,7 @@
 
 Ghostish is Jekyll theme designed to ease migration from [Ghost](https://ghost.org), by using the output from [jekyll_ghost_importer](https://github.com/eloyesp/jekyll_ghost_importer). When combined together with this theme migrating to Jekyll should be a breeze. The Ghostish design is inspired by Ghost's default Casper theme.
 
-The jump to Ghost v1 caused many an issue to self-hosting users of the platform. In particular because from Ghost v1 they took the decision to only support their “recommended stack”, which consists of: Ubuntu 16.04, MySQL, NGINX, etc. I created this theme to aid my own migration from Ghost to Jekyll, therefore it makes a few assumptions which may not be relevant to everybody. Most notably it's setup for single author sites, but it shouldn't be too difficult to adjust to accommodate more.
+The jump to Ghost v1 caused many an issue for self-hosting users of the platform. In particular because from Ghost v1 they took the decision to only support their “recommended stack”, which consists of: Ubuntu 16.04, MySQL, NGINX, etc. I created this theme to aid my own migration from Ghost to Jekyll, therefore it makes a few assumptions which may not be relevant to everybody. Most notably it's setup for single author sites, but it shouldn't be too difficult to adjust to accommodate more.
 
 ## Details
 
