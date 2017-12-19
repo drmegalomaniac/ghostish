@@ -28,5 +28,5 @@
     {% assign page_paths = site.header_pages | default: default_paths %}
     {% assign firstPost = site.posts | last %}
     <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> &copy; {{ firstPost.date | date: "%Y" }}–{{ 'now' | date: "%Y" }}</section>
-  <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &amp; Ghostish</section>
+  <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &amp; <a href="https://github.com/drmegalomaniac/ghostish">Ghostish</a></section>
 </footer>
