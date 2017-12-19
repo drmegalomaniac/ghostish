@@ -24,6 +24,15 @@ The theme is live on my own site: https://megalomaniacslair.co.uk/
 
 ## Installation
 
+### From GitHub
+
+Clone/Download the repository from: [ghostish-jekyll-theme](https://github.com/drmegalomaniac/ghostish). Then run:
+
+    bundle install
+    bundle exec jekyll build
+
+### From RubyGems
+
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
