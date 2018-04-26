@@ -79,6 +79,10 @@ This theme uses the plugins [jekyll-feed](https://rubygems.org/gems/jekyll-feed)
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/drmegalomaniac/ghostish. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
+## Support
+
+<a href='https://ko-fi.com/A85754JJ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
